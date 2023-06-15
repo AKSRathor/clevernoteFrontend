@@ -1,0 +1,46 @@
+.tagListBg{
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+    opacity: 0.8;
+}
+.tagNamesList {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    z-index: 7;
+    left: 31%;
+    background-color: #222;
+    top: 23vh;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 3%;
+    text-align: center;
+    cursor: pointer;
+    height: 40vh;
+    overflow: auto;
+
+    width: 40%;
+}
+.tagList{
+    display: none;
+
+}
+.tagNameIs{
+    background-color: rgb(55, 55, 55);
+    border: 2px solid rgb(101, 101, 101);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+
+    padding: 2%;
+    transition: all ease-out 0.1s;
+}
+
+.tagNameIs:hover{
+    background-color: #222;
+}

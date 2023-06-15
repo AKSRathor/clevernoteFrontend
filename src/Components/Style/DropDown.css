@@ -1,0 +1,27 @@
+.dropDown {
+    display: inline-block;
+    flex-direction: column;
+    /* position: absolute; */
+    /* margin-top: 9.5%; */
+    background-color: #353535;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 60%;
+}
+.dropDown button{
+    color: white;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    margin: 4% 0%;
+    padding-left: 15%;
+
+    text-align: left;
+    border: none;
+    margin-top: 5px;
+    background-color: transparent;
+    width: 100%;
+    /* padding: 2%; */
+}
+.dropdownBtn:hover{
+    background-color: #444;
+}

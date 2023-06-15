@@ -1,0 +1,417 @@
+.upperSectionHeaderWS {
+    display: flex;
+    margin-top: 1%;
+}
+
+.bgImageHome {
+    background-size: cover;
+    position: absolute;
+    /* display: none; */
+}
+
+.cardSection {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    gap: 33px;
+    overflow-x: scroll;
+}
+.WSCard {
+    /* width: 23%; */
+    min-width: 211px;
+    /* margin-right: 2%; */
+    background-color: #262626;
+    transition: all ease-out 0.1s;
+    padding: 2.5%;
+    border-radius: 11px;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+.HeadSectionWorkSpace{
+    background-color: transparent;
+    color: white;
+}
+.HeadSectionWorkSpace button:hover{
+    background-color: #414141;
+}
+.HeadSectionWorkSpace button{
+    /* padding: 0.1%; */
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 2%;
+    padding-left: 0.5%;
+
+    border-radius: 5px;
+    /* font-weight: bold; */
+    font-size: 1.1em;
+}
+
+.currentTabWS a{
+    color: orange;
+}
+a{
+    text-decoration: none;
+}
+.currentTabWS{
+    flex: 1 1 auto;
+}
+.rightSectionBtn {
+    color: white;
+    height: 1.7em;
+    width: 40px;
+    margin-right: 2%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    transition: all ease-out 0.14s;
+    text-align: center;
+    background-color: transparent;
+     border: none;
+    /* text-align: center; */
+
+}
+.rightSectionBtn i{
+    margin: auto;
+}
+
+.rightSectionBtn:hover{
+    background-color: #444;
+
+}
+
+.rightSection{
+    display: flex;
+}
+
+.upperSectionWSHead {
+    color: #ebebeb;
+    width: 143px;
+}
+.upperSectionWSDesc{
+    color: #A1A1A1;
+}
+.upperSectionWSDesc p{
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.upperSectionWSHead h2{
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.upperSectionWSDate{
+    color: #A1A1A1;
+}
+
+.HeadSectionWorkSpace button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.workSpace {
+    background-color: #1A1A1A;
+    width: 78%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    border-radius: 20px;
+    height: 54vh;
+    z-index: 5;
+    /* background-color: #1A1A1A; */
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .workSpace{
+      height: 121vh;
+    }
+
+    .WSCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upperSectionWSDesc p {
+        
+        padding: 3% 15%;
+    }
+
+    .upperSectionWSDesc {
+        color: #A1A1A1;
+        text-align: center;
+        width: 100%;
+    }
+    .upperSectionWSDate {
+        color: #A1A1A1;
+        width: 100%;
+    }
+
+    .upperSectionWSDate p {
+        text-align: center;
+    }
+
+    .upperSectionWSHead {
+        
+        width: 100%;
+    }
+
+    .upperSectionWSHead h2 {
+        
+        text-align: center;
+    }
+
+  }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .homeTab{
+        backdrop-filter: blur(10px);
+    }
+    
+
+
+  }
+
+
+
+.homeTab{
+    display: flex;
+    /* justify-content: center; */
+    overflow-x: hidden;
+    background-color: #000;
+    flex-direction: column;
+    align-items: center;
+}
+.alignItemWS {
+    margin-top: 5%;
+    width: 90%;
+}
+
+
+.recentCapUl {
+    display: flex;
+    color: #A1A1A1;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.quickNotes {
+    height: 300px;
+    width: 78%;
+    background-color: #262626;
+    color: white;
+    border-radius: 30px;
+    margin: 2%;
+    z-index: 5;
+}
+
+
+.recentCapA{
+    color: white;
+    /* margin: 3%; */
+    cursor: pointer;
+    color: #A1A1A1;
+}
+
+.recentCapNavLi {
+    padding-right: 4%;
+    cursor: pointer;
+}
+
+.homeQuickNote{
+    width: 100%;
+    margin-top: 1%;
+}
+.lowerSectionQNH1{
+    font-size: 1.1em;
+}
+.alignItemQN {
+    width: 90%;
+    margin: auto;
+}
+
+.homeQNText {
+    /* display:  none; */
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 3%;
+    background-color: #1A1A1A;
+    
+    position: relative;
+
+    outline: transparent;
+    color: white;
+    resize: none;
+
+}
+
+.homeQNText::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid white;
+    box-sizing: border-box;
+    /* padding-top: 20px;  */
+    background-color: white; /* adjust the color of the lines */
+  }
+
+.homeQNText:focus {
+    border: none;
+  }
+
+.scheduleTimeDisplayLeft{
+    border: none;
+    /* border-bottom: 2px solid black; */
+    /* background-color: transparent; */
+}
+.scheduleTimeDisplayRight{
+    border: none;
+    width: 46%;
+    /* border-bottom: 2px solid black; */
+}
+
+.scheduleBox {
+    display: flex;
+    /* display: none; */
+    padding: 2% 0%;
+}
+
+.scheduleTimeFrom,  .scheduleTimeTo{
+    background: transparent;
+    border: none;
+    width: 20%;
+    margin-right: 10%;
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.scheduleTimeFrom:focus,  .scheduleTimeTo:focus{
+    /* background: transparent; */
+    border: none;
+    border-bottom: 2px solid rgb(163, 163, 163);
+    outline: none;
+
+}
+
+.scheduleTask{
+    background: transparent;
+    border: none;
+    /* width: 20%; */
+    margin-right: 10%;
+    color: white;
+    border-bottom: 2px solid white;
+    /* text-align: center; */
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.scheduleTask:focus{
+    border: none;
+    border-bottom: 2px solid rgb(163, 163, 163);
+    outline: none;
+}
+
+
+.checkListInp {
+    background: transparent;
+    border: none;
+    /* width: 20%; */
+    margin-right: 10%;
+    color: white;
+    border-bottom: 2px solid white;
+    /* text-align: center; */
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 1%;
+    margin-left: 5%;
+}
+.checkListInp:focus{
+    border: none;
+    border-bottom: 2px solid rgb(163, 163, 163);
+    outline: none;
+}
+.checkListUpper{
+    display: flex;
+    padding: 2%;
+}
+
+.checkMark {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 22px;
+    height: 22px;
+    
+    cursor: pointer;
+    transition: all ease-out 2x s;
+    accent-color: #000000;
+    
+}
+.checkMark:checked{
+    accent-color: white;
+    /* accent-image: */
+    /* transform: translateX(10px); */
+}
+
+
+.workSpaceMenuDrop {
+    position: absolute;
+    display: inline-block;
+    margin-top: 2%;
+    /* transform: rotateX(15deg); */
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: all ease-in-out 0.2s;
+}
+.WSCard:hover{
+    background-color: #343434;
+}
+
+.addBlock{
+    background-color: #ffa200;
+    width: 80px ;
+    height: 80px;
+    
+    text-align: center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: black;
+
+}
+
+
+
+.addBlockCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;
+    
+    width: 7em;
+    text-align: center;
+    align-items: center;
+}
+
+
+.addNoteBlockCard{
+    color: white;
+    margin: 3%;
+    font-weight: bold;
+}
+
+.allQuickSide div{
+    /* margin-bottom: 8%; */
+}

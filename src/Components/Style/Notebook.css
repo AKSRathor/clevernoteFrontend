@@ -1,0 +1,87 @@
+.noteBookUpperSection {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.noteBookTitle, .tag{
+    flex: 1 1 auto;
+}
+
+.noteBookCard {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #3a3a3a;
+    gap: 30px;
+    border-radius: 1px;
+    padding: 2%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: all ease-out 0.1s;
+}
+.noteBookCard:hover{
+    background-color: #1b1b1b;
+    transform: scale(1.01);
+}
+
+
+
+.allCardNotebook {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 35px;
+    /* overflow-y: auto; */
+    margin-left: 3%;
+    margin-top: 3%;
+    height: 96vh;
+    overflow-x: auto;
+    /* overflow: scroll; */
+}
+
+
+.completeSectionNotebook {
+    display: grid;
+    grid-template-columns: 38% 58%;
+    gap: 2%;
+    background: #111;
+}
+
+.notePadOnNotebook{
+    height: 100vh;
+}
+.notePadDiv {
+    background-color: #1A1A1A;
+    width: 100%;
+    /* overflow: hidden; */
+    /* overflow-y: auto; */
+    height: 100vh;
+}
+
+.noteBookDescPara{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.noteBookTitle{
+    font-weight: bold;
+}
+
+.noteBookTag{
+    color: orange;
+}
+
+@media only screen and (max-width: 767px) {
+    .notePadOnNotebook{
+        display: none;
+    }
+    .completeSectionNotebook {
+        display: flex;
+        position: relative;
+        background: none;
+        backdrop-filter: blur(10px);
+    }
+    
+
+}
