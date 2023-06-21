@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import "./Style/Home.css"
 import WorkspaceCard from './WorkspaceCard'
 import HomeQuickNote from './HomeQuickNote'
-import ScheduleBox from './ScheduleBox'
+// import ScheduleBox from './ScheduleBox'
 import NoteContext from '../Context/NoteContext'
-import CheckMarksBox from './CheckMarksBox'
+// import CheckMarksBox from './CheckMarksBox'
 import { useNavigate } from 'react-router-dom'
 import DropDown from './DropDown'
 
@@ -152,18 +152,18 @@ const Home = () => {
             </nav>
             <div className="allQuickSide">
               <HomeQuickNote quickNoteDir={quickNoteDir} currentHeight0={currentHeight0} setCurrentHeight0={setCurrentHeight0} />
-              <div style={{ display: quickNoteDir === 1 ? "block" : 'none' }} className="scheduleBoxDiv">
+              {/* <div style={{ display: quickNoteDir === 1 ? "block" : 'none' }} className="scheduleBoxDiv">
                 {mySchedules.map((i) => {
                   return <ScheduleBox setCurrentHeight1 = {setCurrentHeight1} currentHeight1 = {currentHeight1} sno={i.sno} key={i._id} _id={i._id} i={i} from={i.from} to={i.to} task={i.task} />
                 })}
-              </div>
+              </div> */}
 
 
-              <div className="checkListDiv" style={{ display: quickNoteDir === 2 ? "block" : "none" }}>
+              {/* <div className="checkListDiv" style={{ display: quickNoteDir === 2 ? "block" : "none" }}>
                 {checkList.map((i) => {
                   return <CheckMarksBox currentHeight2 = {currentHeight2} setCurrentHeight2 = {setCurrentHeight2} sno={i.sno} key={i._id} _id={i._id} i={i} tick={i.tick} content={i.content} />
                 })}
-              </div>
+              </div> */}
 
             </div>
 
