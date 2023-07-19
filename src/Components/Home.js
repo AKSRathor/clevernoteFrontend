@@ -13,7 +13,7 @@ import DropDown from './DropDown'
 
 
 const Home = () => {
-  const navigate = useNavigate();
+  const history = useNavigate()
   const context = useContext(NoteContext)
   const { mySchedules, checkList, noteList, setNoteList, setNewNoteBool, newNoteBool, setCurrentNote, addNote, homePagePickup } = context
 
@@ -26,6 +26,9 @@ const Home = () => {
 
   useEffect(() => {
 
+    if(!localStorage.getItem("clevertoken")){
+      history("/login")
+    }
     document.addEventListener('click', handleClickOutside)
     console.log("handle outside")
 
