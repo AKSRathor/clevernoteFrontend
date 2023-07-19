@@ -101,9 +101,7 @@ const Login = () => {
                     
                 // }, 1000);
             }
-            else{
-                console.log(regPass)
-            }
+            
             
     }
 
